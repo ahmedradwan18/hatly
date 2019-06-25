@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:background="#ADF8B0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/desc_payments"
+        android:textSize="24sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/price_payments"
+        android:textSize="24sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/fare_payments"
+        android:textSize="24sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fare"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/date_payments"
+        android:textSize="24sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/deliveryName_payments"
+        android:textSize="24sp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostafa Youssry"
+        />
+
+</LinearLayout>

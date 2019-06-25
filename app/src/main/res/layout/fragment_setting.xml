@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:theme="@style/AppTheme"
+    android:id="@+id/fragment_setting"
+    tools:context=".Setting_Frag">
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#FFF"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cust_name_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Karim.M"
+                    android:textColor="#000"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cust_img_setting"
+                    tools:ignore="HardcodedText" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cust_img_setting"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/school"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/personal_data_btn_setting"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Personal Data"
+            android:background="@drawable/setting_btn_back"
+            android:drawableEnd="@drawable/ic_person_data"
+            android:padding="16dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+        <Button
+            android:id="@+id/invite_friends_btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Invite Friends"
+            android:background="@drawable/setting_btn_back"
+            android:drawableEnd="@drawable/ic_invite_friends"
+            android:padding="16dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:id="@+id/payments_btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Payment's History"
+            android:background="@drawable/setting_btn_back"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:drawableEnd="@drawable/ic_payment"
+            android:padding="16dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText"
+            />
+
+        <Button
+            android:id="@+id/get_help_btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Get help"
+            android:background="@drawable/setting_btn_back"
+            android:drawableEnd="@drawable/ic_get_help"
+            android:padding="16dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <Button
+            android:id="@+id/give_feedback_btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Give us feedback"
+            android:background="@drawable/setting_btn_back"
+            android:drawableEnd="@drawable/ic_give_feedback"
+            android:paddingStart="16dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </LinearLayout>
+</FrameLayout>

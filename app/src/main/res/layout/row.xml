@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#000000"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="12dp"
+        android:background="@drawable/card_back"
+        android:id="@+id/card-row"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:background="#5CF800"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/des-txt"
+                android:layout_width="200dp"
+                android:layout_height="90sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Description Here !"
+                android:textColor="#000"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,RtlCompat" />
+
+            <TextView
+                android:id="@+id/price-txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/done-btn"
+                android:layout_marginEnd="210dp"
+                android:layout_marginTop="120dp"
+                android:text="price Here !"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget"
+                android:layout_alignRight="@+id/done-btn"
+                android:layout_marginRight="190dp" />
+
+            <Button
+                android:id="@+id/edtbtn"
+                android:background="@drawable/btn_follow_style"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="45dp"
+                android:layout_toEndOf="@+id/des-txt"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/des-txt" />
+
+            <Button
+                android:id="@+id/delBtn"
+                android:layout_width="100dp"
+                android:background="@drawable/btn_follow_style"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtbtn"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/des-txt"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/des-txt" />
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:background="@drawable/btn_follow_style"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/delBtn"
+                android:layout_toEndOf="@+id/des-txt"
+                android:text="done"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/des-txt" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

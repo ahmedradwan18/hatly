@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:paddingTop="20dp"
+    android:paddingStart="20dp"
+    android:orientation="vertical"
+    android:background="#267028"
+    tools:ignore="RtlSymmetry"
+    android:id="@+id/header">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/images"
+        android:layout_width="90dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/nav_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="90dp" />
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karim El Sayed"
+        tools:ignore="HardcodedText"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

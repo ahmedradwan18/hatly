@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:id="@+id/view_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:text="Customer Name"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_profile_img"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/karim"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/view_profile_name"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_name"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_name" />
+
+        <ImageButton
+            android:id="@+id/view_profile_call_btn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_call"
+            app:layout_constraintBottom_toBottomOf="@+id/view_profile_img"
+            app:layout_constraintStart_toEndOf="@+id/view_profile_img"
+            app:layout_constraintTop_toTopOf="@+id/view_profile_img"
+            android:layout_marginLeft="8dp" />
+
+        <ImageButton
+            android:id="@+id/view_profile_message_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="@+id/view_profile_img"
+            app:layout_constraintEnd_toStartOf="@+id/view_profile_img"
+            app:layout_constraintTop_toTopOf="@+id/view_profile_img"
+            android:layout_marginRight="16dp" />
+
+
+        <TextView
+            android:id="@+id/view_profile_divider_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="0dp"
+            android:background="#757474"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_img" />
+
+
+        <TextView
+            android:id="@+id/view_profile_about_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="3"
+            android:text="this customer has a good reputation"
+            android:textAlignment="center"
+            android:textColor="#585858"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_divider_second"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/view_profile_divider_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="0dp"
+            android:background="#757474"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_profile_about_txt"
+            />
+        <TextView
+            android:id="@+id/view_profile_email_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="E-Mail"
+            android:textColor="#267028"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_divider_third"
+            tools:ignore="HardcodedText"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/view_profile_email_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="email here"
+            android:textColor="#757474"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_email_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_email_head"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/view_profile_phone_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textColor="#267028"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_email_txt"
+            tools:ignore="HardcodedText"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/view_profile_phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="phone here"
+            android:textColor="#757474"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_email_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_phone_head"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/view_profile_address_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Address"
+            android:textColor="#267028"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_national_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_divider_third"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/view_profile_address_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Address here"
+            android:textColor="#757474"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_address_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_address_head"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/view_profile_national_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="National N."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#267028"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_address_txt"
+            tools:ignore="HardcodedText"
+            android:layout_marginRight="32dp" />
+
+        <TextView
+            android:id="@+id/view_profile_national_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="National Number "
+            android:textColor="#757474"
+            app:layout_constraintEnd_toEndOf="@+id/view_profile_national_head"
+            app:layout_constraintStart_toStartOf="@+id/view_profile_national_head"
+            app:layout_constraintTop_toBottomOf="@+id/view_profile_national_head"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
